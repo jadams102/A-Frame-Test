@@ -24,9 +24,11 @@
             <img id="ocean" src="images/ocean.jpg">
             <img id="paris" src="images/paris.jpg">
             <img id="night" src="images/night.jpg">
+            <img id="nextImg" src="images/NextStretch.png">
+            <img id="backImg" src="images/BackStretch.png">
         </a-assets>
-        <a-plane id="next" position="1 -1 -0.5" rotation="-45 -45 0" width="1" height="1" color="#7BC8A4"></a-plane>
-        <a-plane id="previous" position="-1 -1 -0.5" rotation="-45 45 0" width="1" height="1" color="#7BC8A4"></a-plane>
+        <a-plane id="next" material="alphaTest: 0.5" position="1 -1 -0.5" rotation="-45 -45 0" width="1" height="0.5" src="#nextImg"></a-plane>
+        <a-plane id="previous" material="alphaTest: 0.5" position="-1 -1 -0.5" rotation="-45 45 0" width="1" height="0.5" src="#backImg"></a-plane>
 
         <a-sky id="360image" src="#coast"></a-sky>
         <a-camera wasd-controls-enabled="false">
